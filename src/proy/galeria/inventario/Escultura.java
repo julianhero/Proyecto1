@@ -16,7 +16,6 @@ public class Escultura extends Pieza
         // Llama al constructor de la clase base
         super(id1, "escultura" , titulo1, autor1, fechaCreacion1,lugarCreacion1,disponibleParaVenta1,precioFijo1, estado1);
         
-        // Inicializa los atributos específicos de la escultura
         this.altura = altura;
         this.anchura = anchura;
         this.profundidad = profundidad;
@@ -26,7 +25,6 @@ public class Escultura extends Pieza
         this.detallesInstalacion = detallesInstalacion;
     }
 
-    // Métodos adicionales para obtener o establecer detalles de la escultura
     public Double getAltura() {
         return altura;
     }

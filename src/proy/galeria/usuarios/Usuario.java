@@ -42,31 +42,38 @@ public class Usuario
 				Valido = true;
 			}
 		}
-		
 				
-		
 		return Valido;
 	}
-	
-	public void registrarPago(Compra compra, double monto, String metodoPago) {
-        // Aquí se registraría el pago, lo cual permitirá que la pieza involucrada sea entregada a su nuevo propietario
-        // Dependiendo del método de pago, se podría realizar alguna acción adicional, como comunicarse con un servicio
-        // de pagos externo o registrar la transacción en una base de datos
-        
-        // En este ejemplo, simplemente vamos a crear un nuevo objeto Pago y realizar el pago asociado a la compra
-        int fechaPago = obtenerFechaActual(); // Supongamos que tenemos un método para obtener la fecha actual
-        Pago pago = new Pago(compra, fechaPago, monto, metodoPago);
-        pago.realizarPago(compra); // Procesar el pago
-        
-        // Aquí podrías realizar otras acciones, como actualizar el estado de la compra o notificar al comprador
-        // sobre la finalización del proceso de pago
+	public String getNombre() {
+        return nombre;
     }
 
-    // Método de ejemplo para obtener la fecha actual
-	private int obtenerFechaActual() {
-        LocalDate fechaActual = LocalDate.now();
-        // Formato: AAAAMMDD
-        int fechaNumerica = fechaActual.getYear() * 10000 + fechaActual.getMonthValue() * 100 + fechaActual.getDayOfMonth();
-        return fechaNumerica;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+	
+        
+    
 }

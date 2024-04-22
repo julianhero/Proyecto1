@@ -47,4 +47,67 @@ public class Subasta
         }
    
     }
+    public Pieza getPieza() {
+        return pieza;
+    }
+
+    public void setPieza(Pieza pieza) {
+        this.pieza = pieza;
+    }
+
+    public Double getValorInicial() {
+        return valorInicial;
+    }
+
+    public void setValorInicial(Double valorInicial) {
+        this.valorInicial = valorInicial;
+    }
+
+    public Double getValorMinimo() {
+        return valorMinimo;
+    }
+
+    public void setValorMinimo(Double valorMinimo) {
+        this.valorMinimo = valorMinimo;
+    }
+
+    public int getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(int fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public int getFechaFin() {
+        return fechaFin;
+    }
+
+    public void setFechaFin(int fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public Comprador getCompradorGanador() {
+        return compradorGanador;
+    }
+
+    public void setCompradorGanador(Comprador compradorGanador) {
+        this.compradorGanador = compradorGanador;
+    }
+
+    public Double getOfertaGanadora() {
+        return ofertaGanadora;
+    }
+
+    public void setOfertaGanadora(Double ofertaGanadora) {
+        this.ofertaGanadora = ofertaGanadora;
+    }
+
+    public Map<Comprador, Double> getOfertas() {
+        return ofertas;
+    }
+
+    public void setOfertas(Map<Comprador, Double> ofertas) {
+        this.ofertas = ofertas;
+    }
 }

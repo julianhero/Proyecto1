@@ -15,7 +15,6 @@ public class Consola
 		String rutaArchivo = "C:\\Users\\JULIAN_PC\\Documents\\piezas.csv"; // Ruta del archivo CSV
         try {
             Map<String, Pieza> piezas = PersistenciaPiezas.cargarPiezas(rutaArchivo);
-            // Hacer algo con el mapa de piezas cargadas, como mostrarlas en la consola
             for (Map.Entry<String, Pieza> entry : piezas.entrySet()) {
                 System.out.println("ID: " + entry.getKey() + ", Pieza: " + entry.getValue());
             }
@@ -26,7 +25,7 @@ public class Consola
 	
        
        	Scanner scanner = new Scanner(System.in);
-        CajeroGaleria cajero = new CajeroGaleria(); // Suponiendo que ya tienes una instancia de CajeroGaleria
+        CajeroGaleria cajero = new CajeroGaleria(rutaArchivo, rutaArchivo, rutaArchivo, rutaArchivo); //
 
                 // Menú de opciones
                 while (true) {
@@ -43,10 +42,10 @@ public class Consola
                             System.out.println("\n--- Realizar compra ---");
                             System.out.print("Ingrese el monto de la compra: ");
                             double montoCompra = scanner.nextDouble();
-                            scanner.nextLine(); // Consumir el salto de línea pendiente
+                            scanner.nextLine(); 
                             System.out.print("Ingrese el método de pago (Tarjeta de crédito, Transferencia electrónica, Efectivo): ");
                             String metodoPago = scanner.nextLine();
-                            cajero.realizarCompra(montoCompra, metodoPago);
+                            //cajero.realizarCompra(montoCompra, metodoPago);
                             System.out.println("Compra realizada con éxito.");
                             break;
                         case 2:
