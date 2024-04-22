@@ -1,5 +1,7 @@
 package proy.galeria.propietariosCompradores;
 
+import proy.galeria.comprasSubastas.Compra;
+
 public class Comprador 
 {
 	private String id;
@@ -17,4 +19,14 @@ public class Comprador
         this.email = email;
         this.limiteCredito = limiteCredito;
     }
+
+	public Double getSaldo() {
+		// TODO Auto-generated method stub
+		return limiteCredito;
+	}
+
+	public void descontarSaldo(Compra precioCompra) 
+	{
+		limiteCredito = limiteCredito - precioCompra.getPrecioCompra();
+	}
 }

@@ -16,4 +16,10 @@ public class Pago
         this.metodoPago = metodoPago;
     }
 
+	public void realizarPago(Compra precioCompra) 
+	{
+		
+		
+	}
+
 }

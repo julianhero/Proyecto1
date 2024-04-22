@@ -10,11 +10,11 @@ public class Escultura extends Pieza
     private boolean requiereElectricidad;
     private String detallesInstalacion;
 
-    public Escultura(String id1, String tipo1, String titulo1, String autor1,String fechaCreacion1, String lugarCreacion1, boolean disponibleParaVenta1, Double precioFijo1,
+    public Escultura(String id1, String tipo1, String titulo1, String autor1,String fechaCreacion1, String lugarCreacion1, boolean disponibleParaVenta1, Double precioFijo1, String estado1,
                      Double altura, Double anchura, Double profundidad, String materiales,
                      Double peso, boolean requiereElectricidad, String detallesInstalacion) {
         // Llama al constructor de la clase base
-        super(id1, "escultura" , titulo1, autor1, fechaCreacion1,lugarCreacion1,disponibleParaVenta1,precioFijo1);
+        super(id1, "escultura" , titulo1, autor1, fechaCreacion1,lugarCreacion1,disponibleParaVenta1,precioFijo1, estado1);
         
         // Inicializa los atributos específicos de la escultura
         this.altura = altura;

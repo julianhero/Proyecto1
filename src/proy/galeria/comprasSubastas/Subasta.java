@@ -45,5 +45,6 @@ public class Subasta
             compradorGanador = ganador;
             this.ofertaGanadora = ofertaGanadora;
         }
+   
     }
 }
